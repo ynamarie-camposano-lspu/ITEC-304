@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"&gt;>
+		
+	</head>
+
+
+	<body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="{{ url_for('index')}}">FlaskBlog></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{url_for('activity1')}}">Activity1></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('activity2')}}">Activity2></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('activity3')}}">Activity3></a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+		<center>
+			<h3>Register Here</h3>
+
+			<form action="" method="">
+
+				<table>
+					<tr>
+						<td>Username</td>
+						<td>
+							<input type="text" name="user" placeholder="Enter your username here">
+						</td>
+					</tr>
+
+					<tr>
+						<td>Password:</td>
+						<td>
+							<input type="Password" name="User_pass" placeholder="Enter your password here">
+					 </td>
+
+					</tr>
+
+					<tr>
+						<td>Email:</td>
+						<td>
+							<input type="Email" name="mail" placeholder="Enter your email here">
+					  </td>
+					 </tr>
+
+					 <tr>
+					 	<td>Gender:</td>
+					 	<td>
+					 		<input type="radio" name="gender">Male
+					 		<input type="radio" name="gender">Female
+					 		<input type="radio" name="gender">Others
+					 	</td>
+					 </tr>
+
+					 <tr>
+					 	<td>Contact Number:</td>
+					 	<td>
+					 		<select>
+					 			<option>+254</option>
+					 			<option>+255</option>
+					 			<option>+256</option>
+					 			<option>+257</option>
+					 			<option>+258</option>
+					 		</select>
+					 		<input type="phone" name="mobile_digits" placeholder="9**********" maxlength="10"> 
+					 	</td>
+
+					 	<tr>
+					 		<td>
+					 			<input type="submit" name="submit" value="Submit">
+					 		</td>
+					 </tr>
+			    </table>
+
+
+			</form>
